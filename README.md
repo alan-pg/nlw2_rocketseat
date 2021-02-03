@@ -42,7 +42,7 @@ git clone https://github.com/alan-pg/nlw2_rocketseat
 cd nlw2-rocketseat
 
 # executar o projeto
-node node .\src\database\faker_data.js
+node .\src\database\faker_data.js
 npm start
 http://localhost:5500
 ```
