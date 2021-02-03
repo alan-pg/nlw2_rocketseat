@@ -1,0 +1,132 @@
+/* --- ESSENCIAL --- */
+
+.modal {
+    display: none;
+    
+    }
+    
+    .modal:target {
+    display: flex;
+    }
+
+
+    /* --- CUSTOMIZÁVEL, MAS OBRIGATÓRIO --- */
+
+.modal {
+    text-align: left;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: ;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    }
+    
+    .modal:target {
+    justify-content: space-around;
+    align-items: center;
+    }
+    
+    .modal__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    cursor: default;
+    }
+    
+    .modal__content {
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    background-image: url(../images/success-background.svg) ;
+    background-color: var(--color-primary);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    padding: 2rem;
+    }
+
+    .modal__content .success {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    
+    .modal__content .success .icon-success {
+        margin-bottom: 3rem;
+    }
+
+    .modal__content .success strong {
+        
+        font: 700 3.6rem Archivo;
+        line-height: 4.2rem;
+        color: var(--color-title-in-primary);
+        
+    }
+
+    
+
+    .modal__content .success .message-success {        
+        margin-top: 3rem;
+    }
+
+    .modal__content .success p {
+        max-width: 30rem;
+        font-size: 1.5rem;
+        line-height: 2.6rem;
+        color: var(--color-text-in-primary);
+        margin: 0 auto 2.4rem;
+        text-align: center;
+    }
+    
+    .modal__close {
+    color: initial;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 0.5rem;
+    display: inline-block;
+    }
+
+    
+
+    @media (min-width: 700px) { 
+        .modal__content {
+            height: 80vh;
+            width: 100%;
+            max-width: 74rem;
+        }
+
+        .modal__content .success {
+            margin-top: 2rem;
+        }
+
+        .modal__content .success .icon-success {
+            margin-bottom: 0;
+        }
+
+    }
+
+    @media (min-width: 1000px) {
+        .modal__content .success {
+            margin-top: 5rem;
+        }
+
+        .modal__content .success .icon-success {
+            margin-bottom: 3rem;
+        }
+
+        .modal__content .success strong {        
+            font: 700 5rem Archivo;
+        }
+
+        .modal__content .success p {
+            font-size: 2rem;
+            line-height: 3.6rem;
+            
+        }
+    }
