@@ -1,5 +1,5 @@
 # NLW2
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/alan-pg/teste-react/blob/main/LICENSE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/alan-pg/nlw2_rocketseat/blob/main/LICENSE) 
 
 # Sobre o projeto
 
@@ -10,17 +10,22 @@ https://nlw2-rocketseat.herokuapp.com/
 ## Home
 ![Web 1](https://github.com/alan-pg/nlw2_rocketseat/blob/main/src/assets/homepage.png)
 
-## Layout reconstruido por mim após o curso.
-![Web 1](https://github.com/alan-pg/teste-react/blob/main/src/assets/images/tela.png)
+## Cadastro de aulas.
+![Web 1](https://github.com/alan-pg/nlw2_rocketseat/blob/main/src/assets/20210203_182851.gif)
 
 
 # Tecnologias utilizadas
 ## Back end
-- API https://coronavirus-19-api.herokuapp.com/countries
+- Nodejs
+- Express
+- Sqlite
+- Nunjucks
+- Nodemon
+- Faker
+
 ## Front end
 - HTML / CSS / JavaScript
-- ReactJS
-- Material UI
+
 ## Implantação em produção
 - Heroku
 
@@ -31,13 +36,15 @@ Pré-requisitos: Nodejs
 
 ```bash
 # clonar repositório
-git clone https://github.com/alan-pg/CoronaVirus-Dashboard-React
+git clone https://github.com/alan-pg/nlw2_rocketseat
 
 # entrar na pasta do projeto
-cd CoronaVirus-Dashboard-React
+cd nlw2-rocketseat
 
 # executar o projeto
+node node .\src\database\faker_data.js
 npm start
+http://localhost:5500
 ```
 
 # Autor
